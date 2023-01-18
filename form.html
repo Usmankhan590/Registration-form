@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+ <style>
+     body{
+        background-image: url(almond.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     form{
+         margin: 4%;
+         width: 60%;
+         height: 800px;
+         background-color: burlywood;
+         border-radius: 20px;
+     }
+     input{
+         width: 60%;
+         height: 8%;
+         border-color: black;
+         background-color: transparent;
+         outline: none;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-size: smaller;
+         text-align: center;
+
+     }
+     button{
+background-color: white;
+border: black;
+outline: 20px;
+border-radius: 20px;
+width: 40%;
+height: 10%;
+margin-top: 4%;
+font-size: smaller;
+     }
+     header h1{
+         color: coral;
+         font-size: 2rem;
+         margin-bottom: 4%;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+     }
+     input[type=radio]{
+         width: 5%;
+         height: 20px;
+     }
+     #abc{
+         margin-left: 4%;
+     }
+   
+ </style>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Registration form</h1>
+    </header>
+    <form>
+        <label for="name">first name </label> <br>
+        <input type="text" name="fName"  placeholder="First Name" minlength="3"  title="first" required="required" oninvalid="this.setCustomValidity('hsd')" oninput="this.setCustomValidity('')"><br><br>
+<input type="text" minlength="3"  placeholder="Lats name"><br><br>
+<input type="phone" minlength="3" placeholder="Enter age" required><br><br>
+<input type="email" placeholder="someone@example.com" required><br><br>
+<input type="password" placeholder="Enter your password" pattern=".{8,}"  required><br><br>
+<input type="radio" name="radio-btn" id="xyz"> <br>
+<input type="radio" name="radio-btn"> <br>   
+<input type="radio" name="radio-btn">  <br>
+<select name="" id="abc">
+  <option value="">A</option>
+  <option value="">B</option>
+  <option value="">C</option>
+  <option value="">D</option>
+</select> 
+<button type="submit">Submit form</button>
+</form>
+    </center>
+</body>
+</html>
